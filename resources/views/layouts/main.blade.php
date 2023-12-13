@@ -98,10 +98,6 @@
                                     <i class="ti-shift-right text-primary"></i>
                                     Sign In
                                 </a>
-                                <a class="dropdown-item" href="/register">
-                                    <i class="ti-user text-primary"></i>
-                                    Sign Up
-                                </a>
                             </div>
                         </li>
                     @endauth
