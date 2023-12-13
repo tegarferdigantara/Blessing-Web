@@ -21,7 +21,7 @@ class RegisterController extends Controller
             'login_id' => 'required|min:6|max:20|unique:tuser',
             'email' => 'required|email|max:255',
             'password' => 'required|min:6|max:50|confirmed',
-            // 'g-recaptcha-response' => ['required', new ReCaptcha]
+            'g-recaptcha-response' => ['required', new ReCaptcha]
         ]);
 
         $validasi = [

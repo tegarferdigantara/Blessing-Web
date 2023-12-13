@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
     <!-- endinject -->
     <link rel="shortcut icon" href="../../images/favicon.png" />
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
