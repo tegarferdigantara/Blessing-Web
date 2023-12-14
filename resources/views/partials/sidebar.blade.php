@@ -3,7 +3,7 @@
 
         <li class="nav-item">
             @guest
-                <a class="nav-link {{ Request::is('home') ? 'active' : '' }}" href="/home">
+                <a class="nav-link {{ Request::is('index') ? 'active' : '' }}" href="/index">
                     <i class="icon-grid menu-icon"></i>
                     <span class="menu-title active">Home</span>
                 </a>

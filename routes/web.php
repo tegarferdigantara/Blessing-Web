@@ -35,10 +35,10 @@ Route::get('/patch-azuraro/{file}', function ($file) {
 
 Route::group(['middleware' => 'guest'], function () {
     Route::get('/', function () {
-        return redirect('/home');
+        return redirect('/index');
     });
 
-    Route::get('/home', [HomeController::class, 'index']);
+    Route::get('/index', [HomeController::class, 'index']);
 
     Route::get('/login', [LoginController::class, 'index'])->name('login');
     Route::post('/login', [LoginController::class, 'authenticate']);

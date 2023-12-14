@@ -291,7 +291,7 @@
                                         <div class="card-body text-white">
                                             <p class="mb-3 font-weight-bold">Server Status</p>
                                             @if ($ServerInfo)
-                                                {!! Request::is('dashboard', 'home')
+                                                {!! Request::is('dashboard', 'index')
                                                     ? '<p class="fs-30 mb-3 text-danger font-weight-bold">Maintenance</p><p class="font-weight-bold">Updating System</p>'
                                                     : '' !!}
                                             @else

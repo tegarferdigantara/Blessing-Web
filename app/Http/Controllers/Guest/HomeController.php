@@ -13,7 +13,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view('home', [
+        return view('index', [
             'TNGuild' => TNGuild::all(),
             'TOP15' => DB::select(
                 DB::raw('SELECT TOP 10 char_id,kill_count,killed_count,

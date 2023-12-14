@@ -16,7 +16,7 @@
                         @endif
                         <div class="auth-form-light text-left py-5 px-4 px-sm-5">
                             <div class="brand-logo">
-                                <img src="../../images/logo.svg" alt="logo">
+                                <a href="/index"><img src="../../images/logo.svg" alt="logo"></a>
                             </div>
                             <h4>New here?</h4>
                             <h6 class="font-weight-light">Signing up is easy. It only takes a few steps</h6>
