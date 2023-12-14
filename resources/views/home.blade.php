@@ -220,27 +220,27 @@
 @extends('layouts.main')
 
 @section('content')
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        @if (session()->has('logout'))
-            const Toast = Swal.mixin({
-                toast: true,
-                position: "top-end",
-                showConfirmButton: false,
-                timer: 3000,
-                timerProgressBar: true,
-                didOpen: (toast) => {
-                    toast.onmouseenter = Swal.stopTimer;
-                    toast.onmouseleave = Swal.resumeTimer;
-                }
-            });
-            Toast.fire({
-                icon: "success",
-                title: "{{ session('logout') }}"
-            });
-        @endif
-    });
-</script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            @if (session()->has('logout'))
+                const Toast = Swal.mixin({
+                    toast: true,
+                    position: "top-end",
+                    showConfirmButton: false,
+                    timer: 3000,
+                    timerProgressBar: true,
+                    didOpen: (toast) => {
+                        toast.onmouseenter = Swal.stopTimer;
+                        toast.onmouseleave = Swal.resumeTimer;
+                    }
+                });
+                Toast.fire({
+                    icon: "success",
+                    title: "{{ session('logout') }}"
+                });
+            @endif
+        });
+    </script>
     <div class="main-panel">
         <div class="content-wrapper">
             <nav aria-label="breadcrumb">
@@ -384,10 +384,11 @@
                                                                     <li class="font-weight-bold">Balance Demage
                                                                     </li>
                                                                     <a href="" type="button"
-                                                                        data-bs-toggle="modal" data-bs-target="#detailser"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#information-server"
                                                                         class="font-weight-bold"
                                                                         style="text-decoration: none;"> More
-                                                                        Information Here Click Here!</a>
+                                                                        Information..</a>
                                                                     </li>
                                                                 </ul>
                                                             </div>
@@ -717,32 +718,4 @@
             <!-- page-body-wrapper ends -->
         </div>
         <!-- container-scroller -->
-
-        <!-- Modal INFORMATION SERVER-->
-        <div class="modal fade" id="detailser" tabindex="-1" aria-labelledby="detailser" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 class="modal-title fs-3" id="detailser">Detail Server Information</h3>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <li class="font-weight-bold">PURE PVP SYSTEM</li>
-                        <li class="font-weight-bold">Hero IV</li>
-                        <li class="font-weight-bold">Instan Level 115 + 10</li>
-                        <li class="font-weight-bold">Auto Consumed IP</li>
-                        <li class="font-weight-bold">Daily Boss Summond </li>
-                        <li class="font-weight-bold">Crone/IP Based</li>
-                        <li class="font-weight-bold">Power Arena</li>
-                        <li class="font-weight-bold">All Item In IP MALL and Badge Mall</li>
-                        </li>
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-@endsection
+    @endsection

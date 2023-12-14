@@ -56,7 +56,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" data-toggle="collapse" href="#guide" aria-expanded="false" aria-controls="guide">
                 <i class=" menu-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                         fill="currentColor" class="bi bi-book-half" viewBox="0 0 16 16">
                         <path
@@ -65,12 +65,17 @@
                 <span class="menu-title">Guide</span>
                 <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="ui-basic">
+            <div class="collapse" id="guide">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" href="#">World
+                    <li class="nav-item"> <a class="nav-link" type="button" data-bs-toggle="modal"
+                            data-bs-target="#auto-summon-boss">[SYSTEM]
                             Boss Drop</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="#">
-                            Minor Boss Drop </a></li>
+                    <li class="nav-item"> <a class="nav-link" type="button" data-bs-toggle="modal"
+                            data-bs-target="#major-boss">[MAJOR]
+                            Boss Drop</a></li>
+                    <li class="nav-item"> <a class="nav-link" type="button" data-bs-toggle="modal"
+                            data-bs-target="#minor-boss">[MINOR]
+                            Boss Drop</a></li>
                 </ul>
             </div>
         </li>
