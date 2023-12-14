@@ -24,6 +24,15 @@ use Illuminate\Http\Request;
 |
 */
 
+Route::get('/patch-azuraro/{file}', function ($file) {
+    $filePath = public_path('patch-azuraro/' . $file);
+    if (file_exists($filePath)) {
+        return response()->file($filePath);
+    } else {
+        abort(404);
+    }
+})->where('file', '.*');
+
 Route::group(['middleware' => 'guest'], function () {
     Route::get('/', function () {
         return redirect('/home');
@@ -41,12 +50,10 @@ Route::group(['middleware' => 'guest'], function () {
     Route::post('/register', [RegisterController::class, 'store']);
 });
 
-
-
 Route::group(['middleware' => 'auth'], function () {
     Route::post('/logout', [LoginController::class, 'logout']);
 
-    Route::post('/dashboard/fix5101', [TDisconnect::class, 'fixdc']);
+    //Route::post('/dashboard/fix5101', [TDisconnect::class, 'fixdc']);
 
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('/dashboard/settings', [AccountController::class, 'index']);
