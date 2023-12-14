@@ -430,8 +430,8 @@
                                             <thead>
                                                 <tr>
                                                     <th>Ingame Name</th>
-                                                    <th>Kill</th>
                                                     <th>Level</th>
+                                                    <th>Kill</th>
                                                     <th>Status</th>
                                                 </tr>
                                             </thead>
