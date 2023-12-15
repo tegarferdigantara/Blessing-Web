@@ -115,8 +115,18 @@
             </a>
             <div class="collapse" id="form-elements">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"><a class="nav-link" href="#">Full Client</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Mini Patch</a></li>
+                    <li class="nav-item"><a class="nav-link"
+                            href="https://drive.google.com/file/d/15jKN3qxREAhCZ-4oqLUHS49TbPtZEBi3/view?usp=sharing">Full
+                            Client - GDrive</a></li>
+                    <li class="nav-item"><a class="nav-link"
+                            href="https://mega.nz/file/OmxhjZCY#odi7KCxzsrxREzW6ylTSG439obNJkQZfYND9YYe4y8U">Full
+                            Client - Mega.nz</a></li>
+                    <li class="nav-item"><a class="nav-link"
+                            href="https://1drv.ms/u/s!Ajw_e-ePfMbba6km98VJkMI5P-E?e=oNN8Vy">Full Client - One Drive</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link"
+                            href="https://www.mediafire.com/file/10bfgvlx1zel4lj/Azura_Rohan_FC_v1.0.rar/file">Full
+                            Client - Media Share</a></li>
                 </ul>
             </div>
         </li>
