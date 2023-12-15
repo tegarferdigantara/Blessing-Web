@@ -149,18 +149,16 @@
                                                         <div class="row">
                                                             <div class="col-md-6 border-right">
                                                                 <ul class="mt-3" style="list-style: none;">
-                                                                    <li class="font-weight-bold text-danger">
-                                                                        PVP 95% PVE 5%</li>
+                                                                    <li class="font-weight-bold text-danger">PVP 95% PVE 5%
+                                                                    </li>
                                                                     <li class="font-weight-bold">Hero II</li>
-                                                                    <li class="font-weight-bold">Instan Level
-                                                                        110</li>
-                                                                    <li class="font-weight-bold">Daily Boss
-                                                                        Summon </li>
-                                                                    <li class="font-weight-bold">Crone / Badge </li>
-                                                                    <li class="font-weight-bold">Power Arena
-                                                                    </li>
-                                                                    <li class="font-weight-bold">Balance Demage
-                                                                    </li>
+                                                                    <li class="font-weight-bold">Instan Level 110</li>
+                                                                    <li class="font-weight-bold">Rate Reinforcement: 1-12 =
+                                                                        100%</li>
+                                                                    <li class="font-weight-bold">Farm for Bossing Minor,
+                                                                        Major & Boss System</li>
+                                                                    <li class="font-weight-bold">Self Buff System </li>
+                                                                    <li class="font-weight-bold">Balance Damage</li>
                                                                     <a href="" type="button"
                                                                         data-bs-toggle="modal"
                                                                         data-bs-target="#information-server"
