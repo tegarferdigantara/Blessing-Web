@@ -363,7 +363,7 @@
                                                             <td class="font-weight-bold"> {{ $top->kill_count }} </td>
                                                             <td class="font-weight-medium">
                                                                 @if ($top->sts == 1)
-                                                                    <div class="badge badge-success">Offline</div>
+                                                                    <div class="badge badge-success">Online</div>
                                                                 @else
                                                                     <div class="badge badge-danger">Offline</div>
                                                                 @endif
