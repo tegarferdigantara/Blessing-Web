@@ -30,8 +30,9 @@ class RegisterController extends Controller
             'login_pw' => md5($validatedData['password']),
             'password' => Hash::make($validatedData['password']),
             'Point' => 0,
-            'freepoint' => 0,
-            'create_at' => date('Y-m-d H:i:s')
+            'gamepoints' => 0,
+            'create_at' => date('Y-m-d H:i:s'),
+            'cbt_player' => 1,
         ];
 
         User::create($validasi);

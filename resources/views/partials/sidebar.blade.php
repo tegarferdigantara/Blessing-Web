@@ -33,18 +33,20 @@
                 </div>
             </li>
         @endauth
-        <li class="nav-item">
-            <a class="nav-link" href="/register">
-                <i class="menu-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        fill="currentColor" class="bi bi-person-plus" viewBox="0 0 16 16">
-                        <path
-                            d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664z" />
-                        <path fill-rule="evenodd"
-                            d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5" />
-                    </svg></i>
-                <span class="menu-title">Register</span>
-            </a>
-        </li>
+        @guest
+            <li class="nav-item">
+                <a class="nav-link" href="/register">
+                    <i class="menu-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-person-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664z" />
+                            <path fill-rule="evenodd"
+                                d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5" />
+                        </svg></i>
+                    <span class="menu-title">Register</span>
+                </a>
+            </li>
+        @endguest
         <li class="nav-item">
             <a class="nav-link" href="/topup">
                 <i class="menu-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -96,7 +98,7 @@
                                 Nickname</a></li>
                         <li class="nav-item"> <a class="nav-link" href="#">Change
                                 Gender</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="">Guild
+                        <li class="nav-item"> <a class="nav-link" href="#">Guild
                                 Logo</a></li>
                     </ul>
                 </div>
@@ -116,17 +118,17 @@
             <div class="collapse" id="form-elements">
                 <ul class="nav flex-column sub-menu">
                     <li class="nav-item"><a class="nav-link"
-                            href="https://drive.google.com/file/d/15jKN3qxREAhCZ-4oqLUHS49TbPtZEBi3/view?usp=sharing">Full
-                            Client - GDrive</a></li>
+                            href="https://drive.google.com/file/d/15jKN3qxREAhCZ-4oqLUHS49TbPtZEBi3/view?usp=sharing">FC
+                            - GDrive</a></li>
                     <li class="nav-item"><a class="nav-link"
-                            href="https://mega.nz/file/OmxhjZCY#odi7KCxzsrxREzW6ylTSG439obNJkQZfYND9YYe4y8U">Full
-                            Client - Mega.nz</a></li>
+                            href="https://mega.nz/file/OmxhjZCY#odi7KCxzsrxREzW6ylTSG439obNJkQZfYND9YYe4y8U">FC -
+                            Mega.nz</a></li>
                     <li class="nav-item"><a class="nav-link"
-                            href="https://1drv.ms/u/s!Ajw_e-ePfMbba6km98VJkMI5P-E?e=oNN8Vy">Full Client - One Drive</a>
+                            href="https://1drv.ms/u/s!Ajw_e-ePfMbba6km98VJkMI5P-E?e=oNN8Vy">FC - One Drive</a>
                     </li>
                     <li class="nav-item"><a class="nav-link"
-                            href="https://www.mediafire.com/file/10bfgvlx1zel4lj/Azura_Rohan_FC_v1.0.rar/file">Full
-                            Client - Media Share</a></li>
+                            href="https://www.mediafire.com/file/10bfgvlx1zel4lj/Azura_Rohan_FC_v1.0.rar/file">FC -
+                            Media Share</a></li>
                 </ul>
             </div>
         </li>

@@ -51,7 +51,7 @@
                         </a>
                         <ul class="points-menu navbar-nav">
                             <li
-                                class="font-weight-bold text-danger {{ Request::is('home', 'dashboard') ? '' : 'd-none' }}">
+                                class="font-weight-bold text-danger {{ Request::is('index', 'dashboard') ? '' : 'd-none' }}">
                                 Server Time: <span class="text text-danger font-weight-bold" id="current-day"></span>
                                 <span class="text text-danger" id="current-date"></span> <span class="text text-danger"
                                     id="current-month"></span> <span class="text text-danger" id="current-year"></span>
@@ -59,16 +59,17 @@
                             </li>
                             @auth
                                 <li class="font-weight-bold text-danger {{ Request::is('itemmall*') ? '' : 'd-none' }}">
-                                    Item-Mall Point: <span class="text-danger">{{ auth()->user()->point }}</span></li>
+                                    Item-Mall Point: <span class="text-danger">{{ auth()->user()->Point }}</span></li>
                                 <li class="font-weight-bold text-primary {{ Request::is('freemall*') ? '' : 'd-none' }}">
-                                    Free-Mall Point: <span class="text-primary">{{ auth()->user()->freepoint }}9</span></li>
+                                    Free-Mall Point: <span class="text-primary">{{ auth()->user()->gamepoints }}9</span>
+                                </li>
                             @endauth
 
                         </ul>
                         @auth
                         <li class="nav-item nav-profile dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
-                                <img src="images/item/skillstone.jpg" alt="profile" />
+                                <img src="images/faces/member.png" alt="profile" />
                             </a>
                             <div class="dropdown-menu dropdown-menu-right navbar-dropdown"
                                 aria-labelledby="profileDropdown">
@@ -90,7 +91,7 @@
                     @else
                         <li class="nav-item nav-profile dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
-                                <img src="images/item/skillstone.jpg" alt="profile" />
+                                <img src="images/faces/guest.png" alt="profile" />
                             </a>
                             <div class="dropdown-menu dropdown-menu-right navbar-dropdown"
                                 aria-labelledby="profileDropdown">
