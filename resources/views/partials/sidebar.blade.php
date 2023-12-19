@@ -28,9 +28,13 @@
                 </a>
                 <div class="collapse" id="error">
                     <ul class="nav flex-column sub-menu ">
-                        <li class="nav-item"> <a class="nav-link" href="/itemmall"> Item-Mall </a></li>
+                        <li class="nav-item"> <a class="nav-link {{ Request::is('itemmall*') ? 'text-secondary' : '' }}"
+                                href="/itemmall"> Item-Mall </a></li>
+                        <li class="nav-item"> <a class="nav-link {{ Request::is('freemall*') ? 'text-secondary' : '' }}"
+                                href="/freemall"> Free-Mall </a></li>
                     </ul>
                 </div>
+
             </li>
         @endauth
         @guest

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\AccountController;
 use App\Http\Controllers\Auth\AdminController;
 use App\Http\Controllers\Auth\DashboardController;
+use App\Http\Controllers\Auth\DisconnectController;
 use App\Http\Controllers\Auth\FreemallController;
 use App\Http\Controllers\Auth\ItemmallController;
 use App\Http\Controllers\Auth\PointsController;
@@ -53,7 +54,7 @@ Route::group(['middleware' => 'guest'], function () {
 Route::group(['middleware' => 'auth'], function () {
     Route::post('/logout', [LoginController::class, 'logout']);
 
-    //Route::post('/dashboard/fix5101', [TDisconnect::class, 'fixdc']);
+    Route::get('/fix5101', [DisconnectController::class, 'fixdc']);
 
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('/dashboard/settings', [AccountController::class, 'index']);
@@ -70,5 +71,4 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/dashboard/admin', [AdminController::class, 'index']);
     Route::post('/dashboard/admin', [AdminController::class, 'isMaintenance']);
     Route::resource('/dashboard/admin/rps', PointsController::class)->except(['show', 'destroy', 'edit', 'update']);
-    // Route::resource('/dashboard/admin/itemmall', TCategoryItemsController::class);
 });

@@ -32,7 +32,6 @@ class RegisterController extends Controller
             'Point' => 0,
             'gamepoints' => 0,
             'create_at' => date('Y-m-d H:i:s'),
-            'cbt_player' => 1,
         ];
 
         User::create($validasi);

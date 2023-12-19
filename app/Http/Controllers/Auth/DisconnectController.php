@@ -8,12 +8,14 @@ use App\Models\TDisconnect;
 
 class DisconnectController extends Controller
 {
-    public function fixdc()
+    public function fixdc(Request $request)
     {
         TDisconnect::create([
             'user_id' => auth()->user()->user_id,
             'server_id' => '1',
             'char_id' => '0'
         ]);
+
+        return redirect('/dashboard')->with('success', 'Fix 5101 Success!');
     }
 }

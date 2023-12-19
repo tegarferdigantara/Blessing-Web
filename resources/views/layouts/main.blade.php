@@ -50,18 +50,17 @@
                             data-toggle="dropdown">
                         </a>
                         <ul class="points-menu navbar-nav">
-                            <li
-                                class="font-weight-bold text-danger {{ Request::is('index', 'dashboard') ? '' : 'd-none' }}">
-                                Server Time: <span class="text text-danger font-weight-bold" id="current-day"></span>
-                                <span class="text text-danger" id="current-date"></span> <span class="text text-danger"
-                                    id="current-month"></span> <span class="text text-danger" id="current-year"></span>
-                                <span class="text text-info" id="current-time"></span>
-                            </li>
                             @auth
-                                <li class="font-weight-bold text-danger {{ Request::is('itemmall*') ? '' : 'd-none' }}">
-                                    Item-Mall Point: <span class="text-danger">{{ auth()->user()->Point }}</span></li>
+                                <li class="font-weight-bold text-primary {{ Request::is('dashboard') ? '' : 'd-none' }}">
+                                    Welcome, {{ auth()->user()->login_id }} !
+                                </li>
+                                <li class="font-weight-bold text-primary {{ Request::is('itemmall*') ? '' : 'd-none' }}">
+                                    Rohan Point: <span
+                                        class="text-primary">{{ number_format(auth()->user()->Point, 0, '.', '.') }}</span>
+                                </li>
                                 <li class="font-weight-bold text-primary {{ Request::is('freemall*') ? '' : 'd-none' }}">
-                                    Free-Mall Point: <span class="text-primary">{{ auth()->user()->gamepoints }}9</span>
+                                    Free Point: <span
+                                        class="text-primary">{{ number_format(auth()->user()->gamepoints, 0, '.', '.') }}</span>
                                 </li>
                             @endauth
 
@@ -74,12 +73,10 @@
                             <div class="dropdown-menu dropdown-menu-right navbar-dropdown"
                                 aria-labelledby="profileDropdown">
                                 <a class="dropdown-item" onclick="fix5101()">
-
-                                    <i class="ti-alert mdi mdi-sword text-primary">
-                                    </i>
+                                    <i class="ti-alert mdi mdi-sword text-primary"></i>
                                     Fix 5101
                                 </a>
-                                <form action="/logout" method="POST" onclick="logout()">
+                                <form action="/logout" method="POST">
                                     @csrf
                                     <button class="dropdown-item" type="submit">
                                         <i class="ti-power-off text-primary"></i>

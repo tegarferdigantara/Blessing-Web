@@ -19,6 +19,22 @@
                     icon: "success",
                     title: "{{ session('logout') }}"
                 });
+            @elseif (session()->has('success'))
+                const Toast = Swal.mixin({
+                    toast: true,
+                    position: "top-end",
+                    showConfirmButton: false,
+                    timer: 3000,
+                    timerProgressBar: true,
+                    didOpen: (toast) => {
+                        toast.onmouseenter = Swal.stopTimer;
+                        toast.onmouseleave = Swal.resumeTimer;
+                    }
+                });
+                Toast.fire({
+                    icon: "success",
+                    title: "{{ session('success') }}"
+                });
             @endif
         });
     </script>
@@ -26,7 +42,11 @@
         <div class="content-wrapper">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb border border-0 font-weight-bold">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    @guest
+                        <li class="breadcrumb-item"><a href="/index">Home</a></li>
+                    @else
+                        <li class="breadcrumb-item"><a href="/dashboard">Dashboard</a></li>
+                    @endguest
                 </ol>
             </nav>
             <div class="row">

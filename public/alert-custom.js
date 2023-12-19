@@ -1,31 +1,6 @@
 function fix5101() {
   Swal.fire({
-    title: "Press Confirm to Fix 5101",
-    imageUrl: "/images/alarm.gif",
-    imageWidth: 100,
-    imageHeight: 100,
-    showCancelButton: true,
-    confirmButtonColor: "#3085d6",
-    cancelButtonColor: "#d33",
-    confirmButtonText: "Confirm",
-  }).then((result) => {
-    if (result.isConfirmed) {
-      Swal.fire({
-        title: "You ID Already Fixed!",
-        text: "Please Relogin to Game!",
-        imageUrl: "/images/icon-success.gif",
-        imageWidth: 100,
-        imageHeight: 100,
-        imageAlt: "Custom image",
-      });
-    }
-  });
-}
-const login = document.querySelector('#login');
-
-function logout() {
-  Swal.fire({
-    title: "Are you sure to logout?",
+    title: "Are you sure?",
     imageUrl: "/images/alarm.gif",
     imageWidth: 100,
     imageHeight: 100,
@@ -36,11 +11,10 @@ function logout() {
   }).then((result) => {
     if (result.isConfirmed) {
       // Redirect ke halaman selanjutnya setelah konfirmasi
-      window.location.href = "/home"; // Gantilah "/next-page" dengan URL yang sesuai
+      window.location.href = "/fix5101"; // Gantilah "/next-page" dengan URL yang sesuai
     } else {
       Swal.fire({
-        title: "Logout Canceled",
-        text: "You can continue playing.",
+        title: "Fix 5101 Canceled",
         icon: "info",
       });
     }
