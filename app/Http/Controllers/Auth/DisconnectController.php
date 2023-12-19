@@ -8,7 +8,7 @@ use App\Models\TDisconnect;
 
 class DisconnectController extends Controller
 {
-    public function fixdc(Request $request)
+    public function fixdc()
     {
         TDisconnect::create([
             'user_id' => auth()->user()->user_id,
