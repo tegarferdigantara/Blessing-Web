@@ -1,4 +1,4 @@
-function fix5101() {
+function fixdc5101() {
   Swal.fire({
     title: "Are you sure?",
     imageUrl: "/images/alarm.gif",
@@ -10,8 +10,7 @@ function fix5101() {
     confirmButtonText: "Confirm",
   }).then((result) => {
     if (result.isConfirmed) {
-      // Redirect ke halaman selanjutnya setelah konfirmasi
-      window.location.href = "/fix5101"; // Gantilah "/next-page" dengan URL yang sesuai
+      window.location.href = "/fix5101"; 
     } else {
       Swal.fire({
         title: "Fix 5101 Canceled",
@@ -42,24 +41,6 @@ function buy() {
         imageAlt: "Custom image",
       });
     }
-  });
-}
-
-function notif() {
-  const Toast = Swal.mixin({
-    toast: true,
-    position: "top-end",
-    showConfirmButton: false,
-    timer: 3000,
-    timerProgressBar: true,
-    didOpen: (toast) => {
-      toast.onmouseenter = Swal.stopTimer;
-      toast.onmouseleave = Swal.resumeTimer;
-    }
-  });
-  Toast.fire({
-    icon: "success",
-    title: "Signed in successfully"
   });
 }
 

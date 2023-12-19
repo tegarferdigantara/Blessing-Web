@@ -72,7 +72,7 @@
                             </a>
                             <div class="dropdown-menu dropdown-menu-right navbar-dropdown"
                                 aria-labelledby="profileDropdown">
-                                <a class="dropdown-item" onclick="fix5101()">
+                                <a class="dropdown-item" onclick="fixdc5101()">
                                     <i class="ti-alert mdi mdi-sword text-primary"></i>
                                     Fix 5101
                                 </a>
