@@ -62,7 +62,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://bit.ly/azura-dc">
+            <a class="nav-link" target="_blank" href="https://bit.ly/azurarohan-dc">
                 <i class="menu-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                         fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
                         <path

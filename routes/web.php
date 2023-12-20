@@ -34,6 +34,10 @@ Route::get('/patch-azuraro/{file}', function ($file) {
     }
 })->where('file', '.*');
 
+Route::get('/topup', function () {
+    return view('topup.index');
+});
+
 Route::group(['middleware' => 'guest'], function () {
     Route::get('/', function () {
         return redirect('/index');
