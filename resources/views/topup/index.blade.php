@@ -42,11 +42,9 @@
                                     <tbody>
                                         @foreach ($lines_rps as $rps)
                                         <tr>
-                                            
                                                 <td>
                                                     {{ $rps }}
                                                 </td>
-                                            @endforeach
                                             @foreach ($lines_idr as $idr)
                                                 <td>
                                                     {{ number_format($idr, 0, '.', '.') }}
@@ -60,7 +58,7 @@
                                                     <a href="#" target="_blank"
                                                         class="btn btn-success btn-rounded btn-fw btn-sm">Buy</a>
                                                 </td>
-                                            
+                                            @endforeach
                                         </tr>
                                         @endforeach
                                     </tbody>
