@@ -40,21 +40,17 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach ($lines_rps as $rps)
-                                        <tr>
-                                            <td>
-                                                {{ $rps }}
-                                            </td>
-                                            @foreach ($lines_idr as $idr)
+                                        @foreach ($lines_rps as $index => $rps)
+                                            <tr>
                                                 <td>
-                                                    {{ number_format($idr, 0, '.', '.') }}
+                                                    {{ $rps }}
                                                 </td>
-                                                @endforeach
-                                                @foreach ($lines_dollar as $dollar)
                                                 <td>
-                                                    {{ number_format($dollar, 0, '.', '.') }}
+                                                    {{ number_format($lines_idr[$index], 0, '.', '.') }}
                                                 </td>
-                                                @endforeach
+                                                <td>
+                                                    {{ number_format($lines_dollar[$index], 0, '.', '.') }}
+                                                </td>
                                                 <td>
                                                     <a href="#" target="_blank"
                                                         class="btn btn-success btn-rounded btn-fw btn-sm">Buy</a>
