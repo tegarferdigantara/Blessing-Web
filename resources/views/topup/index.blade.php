@@ -42,7 +42,7 @@
                                     <tbody>
                                         @foreach ($lines_rps as $rps)
                                         <tr>
-                                            @foreach ($lines_rps as $rps)
+                                            
                                                 <td>
                                                     {{ $rps }}
                                                 </td>
@@ -60,7 +60,7 @@
                                                     <a href="#" target="_blank"
                                                         class="btn btn-success btn-rounded btn-fw btn-sm">Buy</a>
                                                 </td>
-                                            @endforeach
+                                            
                                         </tr>
                                         @endforeach
                                     </tbody>
