@@ -40,6 +40,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        @foreach ($lines_rps as $rps)
                                         <tr>
                                             @foreach ($lines_rps as $rps)
                                                 <td>
@@ -61,6 +62,7 @@
                                                 </td>
                                             @endforeach
                                         </tr>
+                                        @endforeach
                                     </tbody>
                                 </table>
                             </div>
