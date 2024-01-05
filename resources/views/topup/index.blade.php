@@ -41,25 +41,25 @@
                                     </thead>
                                     <tbody>
                                         @foreach ($lines_rps as $rps)
-                                        @foreach ($lines_idr as $idr)
-                                        @foreach ($lines_dollar as $dollar)
                                         <tr>
-                                                <td>
-                                                    {{ $rps }}
-                                                </td>
+                                            <td>
+                                                {{ $rps }}
+                                            </td>
+                                            @foreach ($lines_idr as $idr)
                                                 <td>
                                                     {{ number_format($idr, 0, '.', '.') }}
                                                 </td>
+                                                @endforeach
+                                                @foreach ($lines_dollar as $dollar)
                                                 <td>
                                                     {{ number_format($dollar, 0, '.', '.') }}
                                                 </td>
+                                                @endforeach
                                                 <td>
                                                     <a href="#" target="_blank"
                                                         class="btn btn-success btn-rounded btn-fw btn-sm">Buy</a>
                                                 </td>
                                             </tr>
-                                        @endforeach
-                                        @endforeach
                                         @endforeach
                                     </tbody>
                                 </table>
