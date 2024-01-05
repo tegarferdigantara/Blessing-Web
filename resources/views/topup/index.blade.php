@@ -43,7 +43,7 @@
                                         @foreach ($lines_rps as $index => $rps)
                                             <tr>
                                                 <td>
-                                                    {{ $rps }}
+                                                    {{ number_format($rps, 0, '.', '.') }}
                                                 </td>
                                                 <td>
                                                     {{ number_format($lines_idr[$index], 0, '.', '.') }}
