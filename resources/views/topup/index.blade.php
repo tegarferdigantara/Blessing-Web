@@ -52,7 +52,7 @@
                                                     {{ number_format($lines_dollar[$index], 0, '.', '.') }}
                                                 </td>
                                                 <td>
-                                                    <a href="#" target="_blank"
+                                                    <a href="https://wa.me/62895371969966?text=Hello%2C%20I%20want%20to%20buy%20azura%20rohan%20point%20with%20amount%20{{ number_format($rps, 0, '.', '.') }}%20%2F%20IDR%20Rp{{ number_format($lines_idr[$index], 0, '.', '.') }}%20%2F%20USD%20%24{{ number_format($lines_dollar[$index], 0, '.', '.') }}" target="_blank"
                                                         class="btn btn-success btn-rounded btn-fw btn-sm">Buy</a>
                                                 </td>
                                             </tr>
