@@ -132,21 +132,21 @@
             <div class="collapse" id="form-elements">
                 <ul class="nav flex-column sub-menu">
                     <li class="nav-item"><a class="nav-link"
-                            href="https://drive.google.com/file/d/1wiJ5JNi5HjLoaV6NHDQocCHm-S75QnUs/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1QlvaBQIuCxvjFIvL9BlyFjEAn7i343c3/view?usp=drive_link"
                             target="_blank">FC
-                            - GDrive v1.1</a></li>
+                            - GDrive v1.2</a></li>
                     <li class="nav-item"><a class="nav-link"
-                            href="https://mega.nz/file/v2onQJwJ#NV20lR3pAxklCZa3Cui4Jh31sVD2gOEQs1ENQVdsIFs"
+                            href="https://mega.nz/file/SmAVgSpL#7t4Aat07WC9eEaDiUosvAPfsZbgyhhYZXYpkMgh1UEk"
                             target="_blank">FC -
-                            Mega.nz v1.1</a></li>
+                            Mega.nz v1.2</a></li>
                     <li class="nav-item"><a class="nav-link"
-                            href="https://1drv.ms/u/s!Ajw_e-ePfMbbbOc4gYHOWHHmZg0?e=FN2bb6" target="_blank">FC - One
-                            Drive v1.1</a>
+                            href="https://1drv.ms/u/s!Av1tUIg-I-DpgSnfEaJgD333k7Op?e=jniFwi" target="_blank">FC - One
+                            Drive v1.2</a>
                     </li>
                     <li class="nav-item"><a class="nav-link"
-                            href="https://www.mediafire.com/file/bolak11kpkmz6mw/Azura_Rohan_Full_Client_v1.1.rar/file"
+                            href="https://www.mediafire.com/file/nz4xdv1gi8x4ag6/Azura_Rohan_Full_Client_v.1.2.rar/file"
                             target="_blank">FC
-                            - Mediafire v1.1</a></li>
+                            - Mediafire v1.2</a></li>
                 </ul>
             </div>
         </li>
