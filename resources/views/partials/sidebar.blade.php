@@ -131,6 +131,12 @@
             </a>
             <div class="collapse" id="form-elements">
                 <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"><a class="nav-link" href="https://ufile.io/62pw29at"
+                            target="_blank">Minipatch
+                            - uFile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://gofile.io/d/bi7RF3"
+                            target="_blank">Minipatch
+                            - GoFile</a></li>
                     <li class="nav-item"><a class="nav-link"
                             href="https://drive.google.com/file/d/1QlvaBQIuCxvjFIvL9BlyFjEAn7i343c3/view?usp=drive_link"
                             target="_blank">FC
