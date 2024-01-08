@@ -49,7 +49,7 @@
                                             <form action="/itemmall" method="POST">
                                                 @csrf
                                                 <h4 class="card-title">{{ $tci->name }}</h4>
-                                                <img src="assets/pic/{{ $tci->img }}" class="img-fluid mb-2"
+                                                <img src="images/item/{{ $tci->img }}" class="img-fluid mb-2"
                                                     width="60px" alt="{{ $tci->img }}">
                                                 <p class="text-active font-weight-bold">Category: <span
                                                         class="font-weight-bold text-danger">{{ $tci->category }}</span></p>
