@@ -16,7 +16,7 @@ class FreemallController extends Controller
     public function index()
     {
         return view('dashboard.mall.freemall.index', [
-            'TCategoryItems' => AHFreeMalls::orderBy('category', 'ASC')->paginate(7)->withQueryString()
+            'TCategoryItems' => AHFreeMalls::orderBy('id', 'ASC')->paginate(12)->withQueryString()
         ]);
     }
 
