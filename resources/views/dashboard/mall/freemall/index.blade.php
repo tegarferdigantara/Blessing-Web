@@ -54,7 +54,7 @@
                                                 <p class="text-active font-weight-bold">Category: <span
                                                         class="font-weight-bold text-danger">{{ $tci->category }}</span></p>
                                                 <h5 class="text-active font-weight-bold">
-                                                    Price: {{ number_format($tci->price, 0, '.', '.') }} Rps</h5>
+                                                    Price: {{ number_format($tci->price, 0, '.', '.') }} Fps</h5>
                                                 <p>{{ $tci->description }}</p>
                                                 <input type="hidden" value="{{ $tci->id }}" name="itemID">
                                                 <div class="col-auto">
