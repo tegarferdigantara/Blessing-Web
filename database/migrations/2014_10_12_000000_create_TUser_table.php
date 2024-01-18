@@ -14,6 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('TUser', function (Blueprint $table) {
+            $table->integer('gamepoints')->nullable();
             $table->string('password', 255)->nullable();
             $table->dateTime('create_at')->nullable();
         });
