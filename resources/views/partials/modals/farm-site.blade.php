@@ -2,7 +2,7 @@
     <div class="modal-dialog modal-dialog-scrollable modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h3 class="modal-title fs-3" id="farm-site">[MAJOR] Boss Drop</h3>
+                <h3 class="modal-title fs-3" id="farm-site>Farm Sites</h3>
             </div>
             <div class="modal-body">
                 <table class="table table-bordered justify-content-center">
