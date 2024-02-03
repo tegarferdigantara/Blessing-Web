@@ -140,6 +140,8 @@
             @yield('content')
 
             {{-- modals --}}
+            @include('partials.modals.farm-site')
+            @include('partials.modals.power-arena')
             @include('partials.modals.information-server')
             @include('partials.modals.auto-summon-boss')
             @include('partials.modals.major-boss')
