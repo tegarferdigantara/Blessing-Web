@@ -71,30 +71,7 @@
                 <span class="menu-title">Discord</span>
             </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#guide" aria-expanded="false" aria-controls="guide">
-                <i class=" menu-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        fill="currentColor" class="bi bi-book-half" viewBox="0 0 16 16">
-                        <path
-                            d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
-                    </svg></i>
-                <span class="menu-title">Guide</span>
-                <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="guide">
-                <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" type="button" data-bs-toggle="modal"
-                            data-bs-target="#auto-summon-boss">[SYSTEM]
-                            Boss Drop</a></li>
-                    <li class="nav-item"> <a class="nav-link" type="button" data-bs-toggle="modal"
-                            data-bs-target="#major-boss">[MAJOR]
-                            Boss Drop</a></li>
-                    <li class="nav-item"> <a class="nav-link" type="button" data-bs-toggle="modal"
-                            data-bs-target="#minor-boss">[MINOR]
-                            Boss Drop</a></li>
-                </ul>
-            </div>
-        </li>
+        @include('guide.index')
         @auth
             <li class="nav-item">
                 <a class="nav-link" data-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
@@ -118,43 +95,6 @@
                 </div>
             </li>
         @endauth
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false"
-                aria-controls="form-elements">
-                <i class=" menu-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708z" />
-                    </svg></i>
-                <span class="menu-title">Download</span>
-                <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="form-elements">
-                <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"><a class="nav-link" href="https://ufile.io/62pw29at"
-                            target="_blank">Minipatch
-                            - uFile</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://gofile.io/d/bi7RF3"
-                            target="_blank">Minipatch
-                            - GoFile</a></li>
-                    <li class="nav-item"><a class="nav-link"
-                            href="https://drive.google.com/file/d/1QlvaBQIuCxvjFIvL9BlyFjEAn7i343c3/view?usp=drive_link"
-                            target="_blank">FC
-                            - GDrive v1.2</a></li>
-                    <li class="nav-item"><a class="nav-link"
-                            href="https://mega.nz/file/SmAVgSpL#7t4Aat07WC9eEaDiUosvAPfsZbgyhhYZXYpkMgh1UEk"
-                            target="_blank">FC -
-                            Mega.nz v1.2</a></li>
-                    <li class="nav-item"><a class="nav-link"
-                            href="https://1drv.ms/u/s!Av1tUIg-I-DpgSnfEaJgD333k7Op?e=jniFwi" target="_blank">FC - One
-                            Drive v1.2</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link"
-                            href="https://www.mediafire.com/file/nz4xdv1gi8x4ag6/Azura_Rohan_Full_Client_v.1.2.rar/file"
-                            target="_blank">FC
-                            - Mediafire v1.2</a></li>
-                </ul>
-            </div>
-        </li>
+        @include('download.index')
     </ul>
 </nav>

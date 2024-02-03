@@ -1,11 +1,5 @@
-Crone 20m
-Badge 10pcs
-Scroll 30%
-Pet Food 1k
-Rohan Points Ticket [SYSTEM BOSS]: 0,9% Rate
-Free Points Ticket [SYSTEM BOSS]: 90% Rate
-Sealed Azura All Stat's Talisman (Boss 3 Days): 50% Rate
-Sealed Azura Melee Attack Talisman (Boss 3 Days): 50% Rate
-Sealed Azura Magic Attack Talisman (Boss 3 Days): 50% Rate
-Sealed Azura Ranged Attack Talisman (Boss 3 Days): 50% Rate
-Sealed Defense Talisman (Boss 3 Days): 50% Rate
+Crone 5m
+Power Badge 15 pcs
+IP Ticket 300k
+Talisman (all stat, all attack) 30%
+Costume & Hat Rare-Permanent 5%
