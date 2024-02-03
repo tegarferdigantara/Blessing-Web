@@ -7,12 +7,12 @@
             <div class="modal-body">
                 <table class="table table-bordered justify-content-center">
                     @php
-                        $majorboss = storage_path('guide/majorboss/majorboss.txt');
-                        $majorbossdrop = storage_path('guide/majorboss/drop.txt');
+                        $site = storage_path('guide/farmsite/sites.txt');
+                        $sitedrop = storage_path('guide/farmsite/drop.txt');
 
                         // Membaca setiap baris dari file dan menampilkannya
-                        $lines = file($majorboss, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-                        $lines2 = file($majorbossdrop, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+                        $lines = file($site, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+                        $lines2 = file($sitedrop, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
                     @endphp
                     <thead>
                         <tr class="text-center">
@@ -20,7 +20,7 @@
                                 #
                             </th>
                             <th>
-                                Boss Name
+                                Site Name
                             </th>
                             <th>
                                 Item Drop
