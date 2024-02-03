@@ -11,6 +11,10 @@
     <div class="collapse" id="guide">
         <ul class="nav flex-column sub-menu">
             <li class="nav-item"> <a class="nav-link" type="button" data-bs-toggle="modal"
+                    data-bs-target="#farm-site">Farm Area</a></li>
+            <li class="nav-item"> <a class="nav-link" type="button" data-bs-toggle="modal"
+                data-bs-target="#power-arena">Power Arena Reward</a></li>
+            <li class="nav-item"> <a class="nav-link" type="button" data-bs-toggle="modal"
                     data-bs-target="#auto-summon-boss">[SYSTEM]
                     Boss Drop</a></li>
             <li class="nav-item"> <a class="nav-link" type="button" data-bs-toggle="modal"
