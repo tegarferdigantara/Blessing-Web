@@ -1,2 +1,8 @@
+[Winner]
 Power Badge 250pcs
 1 pcs Badge Victory 
+Victory Souvenir Pocket
+
+[Lose]
+Power Badge 25pcs
+3pcs Badge of Bravery
