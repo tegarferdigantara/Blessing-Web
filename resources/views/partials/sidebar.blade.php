@@ -71,7 +71,7 @@
                 <span class="menu-title">Discord</span>
             </a>
         </li>
-        @include('guide.index')
+        @include('partials.guide.index')
         @auth
             <li class="nav-item">
                 <a class="nav-link" data-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
@@ -95,6 +95,6 @@
                 </div>
             </li>
         @endauth
-        @include('download.index')
+        @include('partials.download.index')
     </ul>
 </nav>
