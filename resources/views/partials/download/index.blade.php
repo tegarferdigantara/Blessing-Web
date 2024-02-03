@@ -11,28 +11,22 @@
     </a>
     <div class="collapse" id="form-elements">
         <ul class="nav flex-column sub-menu">
-            <li class="nav-item"><a class="nav-link" href="https://ufile.io/62pw29at"
-                    target="_blank">Minipatch
-                    - uFile</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://gofile.io/d/bi7RF3"
-                    target="_blank">Minipatch
-                    - GoFile</a></li>
             <li class="nav-item"><a class="nav-link"
-                    href="https://drive.google.com/file/d/1QlvaBQIuCxvjFIvL9BlyFjEAn7i343c3/view?usp=drive_link"
+                    href="https://drive.google.com/file/d/1N2AFaKnjN7HMPAui2CRQVnWEmnIcT21a/view?usp=sharing"
                     target="_blank">FC
-                    - GDrive v1.2</a></li>
+                    - GDrive v2.0</a></li>
             <li class="nav-item"><a class="nav-link"
-                    href="https://mega.nz/file/SmAVgSpL#7t4Aat07WC9eEaDiUosvAPfsZbgyhhYZXYpkMgh1UEk"
+                    href="https://mega.nz/file/66ZgGQjL#9eCQ27yEAirNdygnLtc9ws2DITR1hXhSP_Q4WdaMQBY"
                     target="_blank">FC -
-                    Mega.nz v1.2</a></li>
+                    Mega.nz v2.0</a></li>
             <li class="nav-item"><a class="nav-link"
-                    href="https://1drv.ms/u/s!Av1tUIg-I-DpgSnfEaJgD333k7Op?e=jniFwi" target="_blank">FC - One
-                    Drive v1.2</a>
+                    href="https://1drv.ms/u/s!Ajw_e-ePfMbbgQNZV67OjhceXWZl?e=gxHr5s" target="_blank">FC - One
+                    Drive v2.0</a>
             </li>
             <li class="nav-item"><a class="nav-link"
-                    href="https://www.mediafire.com/file/nz4xdv1gi8x4ag6/Azura_Rohan_Full_Client_v.1.2.rar/file"
+                    href="https://www.mediafire.com/file/et9nybku3f0kpbw/Azura_Rohan_v2.0.rar/file"
                     target="_blank">FC
-                    - Mediafire v1.2</a></li>
+                    - Mediafire v2.0</a></li>
         </ul>
     </div>
 </li>
