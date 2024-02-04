@@ -135,7 +135,7 @@
                                             <p class="fs-30 mb-2 text-info font-weight-bold">
                                                 8.30 PM
                                             </p>
-                                            <p class="font-weight-bold">Sunday - Server Time</p>
+                                            <p class="font-weight-bold">Saturday - Server Time</p>
                                         </div>
                                     </div>
                                 </div>
