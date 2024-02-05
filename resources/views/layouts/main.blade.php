@@ -56,7 +56,7 @@
                                 </li>
                                 <li class="font-weight-bold text-primary {{ Request::is('itemmall*') ? '' : 'd-none' }}">
                                     Rohan Point: <span
-                                        class="text-primary">{{ number_format(auth()->user()->Point, 0, '.', '.') }}</span>
+                                        class="text-primary">{{ number_format(auth()->user()->point, 0, '.', '.') }}</span>
                                 </li>
                                 <li class="font-weight-bold text-primary {{ Request::is('freemall*') ? '' : 'd-none' }}">
                                     Free Point: <span
