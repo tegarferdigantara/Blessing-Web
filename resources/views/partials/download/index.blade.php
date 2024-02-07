@@ -12,21 +12,29 @@
     <div class="collapse" id="form-elements">
         <ul class="nav flex-column sub-menu">
             <li class="nav-item"><a class="nav-link"
-                    href="https://drive.google.com/file/d/1N2AFaKnjN7HMPAui2CRQVnWEmnIcT21a/view?usp=sharing"
+                    href="https://gofile.io/d/yMj746"
+                    target="_blank">Mini Patch
+                    - GoFile v2.1</a></li>
+            <li class="nav-item"><a class="nav-link"
+                    href="https://ufile.io/xeff34fq"
+                    target="_blank">Mini Patch
+                    - uFile v2.1</a></li>
+            <li class="nav-item"><a class="nav-link"
+                    href="https://drive.google.com/file/d/1jgdeXCYaFRYRfYWHvNIJ5N4mRweCRoKf/view?usp=sharing"
                     target="_blank">FC
-                    - GDrive v2.0</a></li>
+                    - GDrive v2.1</a></li>
             <li class="nav-item"><a class="nav-link"
-                    href="https://mega.nz/file/66ZgGQjL#9eCQ27yEAirNdygnLtc9ws2DITR1hXhSP_Q4WdaMQBY"
+                    href="https://mega.nz/file/v6xRlRZb#ziKUGxmI2nfZvuCVUEDePEeQTFFqUGqEfuwpRnS3KW4"
                     target="_blank">FC -
-                    Mega.nz v2.0</a></li>
+                    Mega.nz v2.1</a></li>
             <li class="nav-item"><a class="nav-link"
-                    href="https://1drv.ms/u/s!Ajw_e-ePfMbbgQNZV67OjhceXWZl?e=gxHr5s" target="_blank">FC - One
-                    Drive v2.0</a>
+                    href="https://1drv.ms/u/s!Ajw_e-ePfMbbgQsOvPifqN9KaxCV?e=fuRvWQ" target="_blank">FC - One
+                    Drive v2.1</a>
             </li>
             <li class="nav-item"><a class="nav-link"
-                    href="https://www.mediafire.com/file/et9nybku3f0kpbw/Azura_Rohan_v2.0.rar/file"
+                    href="https://www.mediafire.com/file/yy9ao8xc840i39y/Azura_Rohan_v2.1.7z/file"
                     target="_blank">FC
-                    - Mediafire v2.0</a></li>
+                    - Mediafire v2.1</a></li>
         </ul>
     </div>
 </li>
