@@ -133,7 +133,7 @@
                                         <div class="card-body text-white">
                                             <p class="mb-2 font-weight-bold ">Township Battle Start</p>
                                             <p class="fs-30 mb-2 text-info font-weight-bold">
-                                                8.30 PM
+                                                9.30 PM
                                             </p>
                                             <p class="font-weight-bold">Saturday - Server Time</p>
                                         </div>
