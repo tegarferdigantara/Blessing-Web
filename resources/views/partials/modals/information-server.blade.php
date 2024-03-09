@@ -8,9 +8,9 @@
             <div class="modal-body">
                 <li class="font-weight-bold">PVP 95% PVE 5%</li>
                 <li class="font-weight-bold">Hero II</li>
-                <li class="font-weight-bold">Instan Level 110</li>
-                <li class="font-weight-bold">Rate Reinforcement: 1-12 = 100%</li>
-                <li class="font-weight-bold">Farm for Bossing Minor, Major & Boss System</li>
+                <li class="font-weight-bold">Instan Level 115</li>
+                <li class="font-weight-bold">Max Reinforcement = 15</li>
+                <li class="font-weight-bold">Farm to Win</li>
                 <li class="font-weight-bold">Self Buff System </li>
                 <li class="font-weight-bold">Balance Damage</li>
                 <li class="font-weight-bold">H.C.S. System</li>

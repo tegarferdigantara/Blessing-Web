@@ -12,29 +12,29 @@
     <div class="collapse" id="form-elements">
         <ul class="nav flex-column sub-menu">
             <li class="nav-item"><a class="nav-link"
-                    href="https://gofile.io/d/yMj746"
+                    href="https://gofile.io/d/dX65r1"
                     target="_blank">Mini Patch
-                    - GoFile v2.1</a></li>
+                    - GoFile v2.2</a></li>
             <li class="nav-item"><a class="nav-link"
-                    href="https://ufile.io/xeff34fq"
+                    href="https://ufile.io/3qpzkmdf"
                     target="_blank">Mini Patch
-                    - uFile v2.1</a></li>
+                    - uFile v2.2</a></li>
             <li class="nav-item"><a class="nav-link"
-                    href="https://drive.google.com/file/d/1jgdeXCYaFRYRfYWHvNIJ5N4mRweCRoKf/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1xMxZp0F8-c9Xw-2YMrFJb7q74WAjNctI/view?usp=sharing"
                     target="_blank">FC
-                    - GDrive v2.1</a></li>
+                    - GDrive v2.2</a></li>
             <li class="nav-item"><a class="nav-link"
-                    href="https://mega.nz/file/v6xRlRZb#ziKUGxmI2nfZvuCVUEDePEeQTFFqUGqEfuwpRnS3KW4"
+                    href="https://mega.nz/file/GiphSaLZ#GAF5PdTBy7pbZkuarz6sHU-k6oQ0WMKPPrIYFX9uRKM"
                     target="_blank">FC -
-                    Mega.nz v2.1</a></li>
+                    Mega.nz v2.2</a></li>
             <li class="nav-item"><a class="nav-link"
-                    href="https://1drv.ms/u/s!Ajw_e-ePfMbbgQsOvPifqN9KaxCV?e=fuRvWQ" target="_blank">FC - One
-                    Drive v2.1</a>
+                    href="https://1drv.ms/u/s!Ajw_e-ePfMbbgROJkFhISIN03Jdi?e=WhsV25" target="_blank">FC - One
+                    Drive v2.2</a>
             </li>
             <li class="nav-item"><a class="nav-link"
-                    href="https://www.mediafire.com/file/yy9ao8xc840i39y/Azura_Rohan_v2.1.7z/file"
+                    href="https://www.mediafire.com/file/ixc85ariod1gyl4/Azura_Rohan_v2.2.7z/file"
                     target="_blank">FC
-                    - Mediafire v2.1</a></li>
+                    - Mediafire v2.2</a></li>
         </ul>
     </div>
 </li>
