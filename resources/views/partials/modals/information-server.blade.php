@@ -7,7 +7,7 @@
             </div>
             <div class="modal-body">
                 <li class="font-weight-bold">PVP 95% PVE 5%</li>
-                <li class="font-weight-bold">Hero II</li>
+                <li class="font-weight-bold">Hero III</li>
                 <li class="font-weight-bold">Instan Level 115</li>
                 <li class="font-weight-bold">Max Reinforcement = 15</li>
                 <li class="font-weight-bold">Farm to Win</li>

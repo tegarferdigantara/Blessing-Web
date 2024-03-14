@@ -171,7 +171,7 @@
                                                                 <ul class="mt-3" style="list-style: none;">
                                                                     <li class="font-weight-bold text-danger">PVP 95% PVE 5%
                                                                     </li>
-                                                                    <li class="font-weight-bold">Hero II</li>
+                                                                    <li class="font-weight-bold">Hero III</li>
                                                                     <li class="font-weight-bold">Instan Level 115</li>
                                                                     <li class="font-weight-bold">Max Reinforcement: 15</li>
                                                                     <li class="font-weight-bold">Farm to Win</li>
@@ -190,10 +190,10 @@
                                                                 <h4 class="font-weight-bold">Our Social Media
                                                                 </h4>
                                                                 <li style="list-style: none;" class="mt-1">
-                                                                    <button type="button"
+                                                                    <a href="https://www.facebook.com/azurarohan"
                                                                         class="btn btn-social-icon-text btn-facebook"><i
                                                                             class="ti-facebook"></i>Facebook
-                                                                        Fanspage</button>
+                                                                        Fanspage</a>
                                                                 </li>
 
 
