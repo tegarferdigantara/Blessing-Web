@@ -191,7 +191,7 @@
                                                                 </h4>
                                                                 <li style="list-style: none;" class="mt-1">
                                                                     <a href="https://www.facebook.com/azurarohan"
-                                                                        class="btn btn-social-icon-text btn-facebook"><i
+                                                                        class="btn btn-social-icon-text btn-facebook" target="_blank"><i
                                                                             class="ti-facebook"></i>Facebook
                                                                         Fanspage</a>
                                                                 </li>
