@@ -7,6 +7,7 @@ use App\Models\AHWebsiteLog;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use App\Rules\ReCaptcha;
 
 class AccountController extends Controller
 {
@@ -19,6 +20,7 @@ class AccountController extends Controller
         $validatedData = $request->validate([
             'current_password' => 'required',
             'new_password' => 'required|min:6|max:50|confirmed',
+            'g-recaptcha-response' => ['required', new ReCaptcha]
         ]);
 
         if (!Hash::check($validatedData['current_password'], auth()->user()->password)) {

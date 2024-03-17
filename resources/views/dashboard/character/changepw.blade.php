@@ -30,6 +30,13 @@
                                 <label for="confirmpassword">Confirm New Password</label>
                                 <input type="password" name="new_password_confirmation" @error('new_password') is-invalid @enderror" class="form-control" id="confirmpassword" placeholder="Confirm New Password">
                               </div>
+                              <div class="form-group">
+                                <div class="g-recaptcha" data-sitekey="{{ env('GOOGLE_RECAPTCHA_KEY') }}"
+                                    data-size="normal"></div>
+                                @if ($errors->has('g-recaptcha-response'))
+                                    <span class="text-danger">{{ $errors->first('g-recaptcha-response') }}</span>
+                                @endif
+                            </div>
                               <button type="submit" class="btn btn-primary mr-2">Submit</button>
                             </form>
                           </div>

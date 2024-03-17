@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/vertical-layout-light/style.css">
     <!-- endinject -->
     <link rel="shortcut icon" href="images/favicon.png" />
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <style>
         body.swal2-shown>[aria-hidden='true'] {
             transition: 0.1s filter;
