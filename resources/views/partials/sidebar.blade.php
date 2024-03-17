@@ -17,7 +17,7 @@
         </li>
         @auth
             <li class="nav-item">
-                <a class="nav-link" data-toggle="collapse" href="#error" aria-expanded="false" aria-controls="error">
+                <a class="nav-link" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="error">
                     <i class=" menu-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                             fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
@@ -35,6 +35,26 @@
                     </ul>
                 </div>
 
+            </li>
+        @endauth
+        @auth
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+                    <i class=" menu-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+                        </svg></i>
+                    <span class="menu-title">Character</span>
+                    <i class="menu-arrow"></i>
+                </a>
+                <div class="collapse" id="charts">
+                    <ul class="nav flex-column sub-menu">
+                        <li class="nav-item"> <a class="nav-link {{ Request::is('changepassword') ? 'text-secondary' : '' }}" href="/changepassword">Change Password</a></li>
+                        <li class="nav-item"> <a class="nav-link {{ Request::is('changenickname') ? 'text-secondary' : '' }}" href="/changenickname">Change Nickname</a></li>
+                        <li class="nav-item"> <a class="nav-link {{ Request::is('changegender') ? 'text-secondary' : '' }}" href="/changegender">Change Gender</a></li>
+                    </ul>
+                </div>
             </li>
         @endauth
         @guest
@@ -72,29 +92,6 @@
             </a>
         </li>
         @include('partials.guide.index')
-        @auth
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
-                    <i class=" menu-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
-                        </svg></i>
-                    <span class="menu-title">Character</span>
-                    <i class="menu-arrow"></i>
-                </a>
-                <div class="collapse" id="charts">
-                    <ul class="nav flex-column sub-menu">
-                        <li class="nav-item"> <a class="nav-link" href="#">Change
-                                Nickname</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="#">Change
-                                Gender</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="#">Guild
-                                Logo</a></li>
-                    </ul>
-                </div>
-            </li>
-        @endauth
         @include('partials.download.index')
     </ul>
 </nav>

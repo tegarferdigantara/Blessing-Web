@@ -12,7 +12,7 @@ class AccountController extends Controller
 {
     public function index()
     {
-        return view('dashboard.settings.index');
+        return view('dashboard.character.changepw');
     }
     public function update(Request $request)
     {

@@ -25,15 +25,6 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/patch-azuraro/{file}', function ($file) {
-    $filePath = public_path('patch-azuraro/' . $file);
-    if (file_exists($filePath)) {
-        return response()->file($filePath);
-    } else {
-        abort(404);
-    }
-})->where('file', '.*');
-
 Route::get('/topup', function () {
     return view('topup.index');
 });
@@ -61,8 +52,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/fix5101', [DisconnectController::class, 'fixdc']);
 
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
-    Route::get('/dashboard/settings', [AccountController::class, 'index']);
-    Route::post('/dashboard/settings', [AccountController::class, 'update']);
 
     Route::get('/itemmall', [ItemmallController::class, 'index'])->name('itemmall');
     Route::post('/itemmall', [ItemmallController::class, 'store']);
@@ -71,6 +60,16 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/freemall', [FreemallController::class, 'store']);
 
     Route::get('/transaction', [TransactionsController::class, 'show'])->name('transaction');
+
+    Route::get('/changepassword', [AccountController::class, 'index'])->name('changepassword');
+    Route::post('/changepassword', [AccountController::class, 'update']);
+
+    Route::get('/changenickname', function() {
+        return view('dashboard.character.changenickname');
+    });
+    Route::get('/changegender', function() {
+        return view('dashboard.character.changegender');
+    });
 
     Route::get('/dashboard/admin', [AdminController::class, 'index']);
     Route::post('/dashboard/admin', [AdminController::class, 'isMaintenance']);

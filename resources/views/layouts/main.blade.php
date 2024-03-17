@@ -54,7 +54,7 @@
                                 <li class="font-weight-bold text-primary {{ Request::is('dashboard') ? '' : 'd-none' }}">
                                     Welcome, {{ auth()->user()->login_id }} !
                                 </li>
-                                <li class="font-weight-bold text-primary {{ Request::is('itemmall*') ? '' : 'd-none' }}">
+                                <li class="font-weight-bold text-primary {{ Request::is('itemmall*', 'changenickname', 'changegender') ? '' : 'd-none' }}">
                                     Rohan Point: <span
                                         class="text-primary">{{ number_format(auth()->user()->point, 0, '.', '.') }}</span>
                                 </li>
