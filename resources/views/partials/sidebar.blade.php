@@ -17,7 +17,7 @@
         </li>
         @auth
             <li class="nav-item">
-                <a class="nav-link" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="error">
+                <a class="nav-link" data-toggle="collapse" href="#mall" aria-expanded="false" aria-controls="error">
                     <i class=" menu-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                             fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
@@ -26,7 +26,7 @@
                     <span class="menu-title">Shop</span>
                     <i class="menu-arrow"></i>
                 </a>
-                <div class="collapse" id="error">
+                <div class="collapse" id="mall">
                     <ul class="nav flex-column sub-menu ">
                         <li class="nav-item"> <a class="nav-link {{ Request::is('itemmall*') ? 'text-secondary' : '' }}"
                                 href="/itemmall"> Item-Mall </a></li>
