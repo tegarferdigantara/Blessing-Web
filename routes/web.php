@@ -61,15 +61,14 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/transaction', [TransactionsController::class, 'show'])->name('transaction');
 
-    Route::get('/changepassword', [AccountController::class, 'index'])->name('changepassword');
-    Route::post('/changepassword', [AccountController::class, 'update']);
+    Route::get('/changepassword', [AccountController::class, 'changePasswordView'])->name('changepassword');
+    Route::post('/changepassword', [AccountController::class, 'changePasswordUpdate']);
 
-    Route::get('/changenickname', function() {
-        return view('dashboard.character.changenickname');
-    });
-    Route::get('/changegender', function() {
-        return view('dashboard.character.changegender');
-    });
+    Route::get('/changenickname', [AccountController::class, 'changeNicknameView'])->name('changenickname');
+    Route::post('/changenickname', [AccountController::class, 'changeNicknameUpdate']);
+
+    Route::get('/changegender', [AccountController::class, 'changeGenderView'])->name('changegender');
+    Route::post('/changegender', [AccountController::class, 'changeGenderUpdate']);
 
     Route::get('/dashboard/admin', [AdminController::class, 'index']);
     Route::post('/dashboard/admin', [AdminController::class, 'isMaintenance']);

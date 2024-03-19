@@ -25,6 +25,14 @@ class AHWebsiteLog extends Model
             $this->attributes['name_activity'] = $value;
             $grade_name = $this->grade == 250 ? 'GM' : 'Player';
             $this->attributes['description'] = '[' . $this->user_id . '] ' . '[' . $grade_name . '] ' . '[' . $this->login_id . '] ' . 'have been ' . $value .  ',' . ' at ' . now()->format('D, d F Y H:i:s');
+        } elseif ($value == 'Change Nickname') {
+            $this->attributes['name_activity'] = $value;
+            // $grade_name = $this->grade == 250 ? 'GM' : 'Player';
+            // $this->attributes['description'] = '[' . $this->user_id . '] ' . '[' . $grade_name . '] ' . '[' . $this->login_id . '] ' . 'have been ' . $value .  ',' . ' at ' . now()->format('D, d F Y H:i:s');
+        } elseif ($value == 'Change Gender') {
+            $this->attributes['name_activity'] = $value;
+            $grade_name = $this->grade == 250 ? 'GM' : 'Player';
+            $this->attributes['description'] = '[' . $this->user_id . '] ' . '[' . $grade_name . '] ' . '[' . $this->login_id . '] ' . 'have been ' . $value .  ',' . ' at ' . now()->format('D, d F Y H:i:s');
         }
     }
 }

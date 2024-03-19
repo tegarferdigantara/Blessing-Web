@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::connection('sqlsrv2')->create('AHDonors', function (Blueprint $table) {
+        Schema::connection('RohanMall')->create('AHDonors', function (Blueprint $table) {
             $table->id();
             $table->string('gamemaster_id', 50);
             $table->integer('donor_user_id');

@@ -20,7 +20,7 @@
                               <div class="form-group">
                                 <label for="password">New Password</label>
                                 <input type="password" name="new_password" class="form-control @error('new_password') is-invalid @enderror" id="password" placeholder="New Password">
-                                @error('new_password') 
+                                @error('new_password')
                                 <div class="invalid-feedback">
                                     {{ $message }}
                                 </div>
@@ -36,7 +36,7 @@
                                 @if ($errors->has('g-recaptcha-response'))
                                     <span class="text-danger">{{ $errors->first('g-recaptcha-response') }}</span>
                                 @endif
-                            </div>
+                              </div>
                               <button type="submit" class="btn btn-primary mr-2">Submit</button>
                             </form>
                           </div>

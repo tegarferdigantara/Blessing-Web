@@ -13,14 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::connection('RohanMall')->create('AHItemMalls', function (Blueprint $table) {
+        Schema::connection('RohanManage')->create('TChangePrices', function (Blueprint $table) {
             $table->id();
-            $table->string('name', 100);
-            $table->bigInteger('price');
-            $table->bigInteger('type');
-            $table->string('description', 100);
-            $table->string('img', 50);
-            $table->string('category', 50);
+            $table->string('change_type');
+            $table->integer('price');
         });
     }
 
@@ -31,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('AHItemMalls');
+        Schema::dropIfExists('TChangePrices');
     }
 };

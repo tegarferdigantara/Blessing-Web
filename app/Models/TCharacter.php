@@ -5,14 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class AHTransactions extends Model
+class TCharacter extends Model
 {
     use HasFactory;
-    protected $guarded = ['id'];
 
-    protected $connection = 'RohanMall';
-
-    protected $table = "AHTransactions";
-
+    protected $guarded = 'id';
+    protected $connection = 'RohanGame';
+    protected $table = 'TCharacter';
     public $timestamps = false;
 }
