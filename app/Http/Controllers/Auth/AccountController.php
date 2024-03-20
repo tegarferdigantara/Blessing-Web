@@ -63,7 +63,7 @@ class AccountController extends Controller
                 'min:4',
                 'string',
                 'unique:'. TCharacter::class .',name',
-                'regex:~^[^!@#$%^&*()_+|}{":<>?`/.,;\'\[\]\\\\]+$~',
+                'regex:/^[a-zA-Z0-9]+$/',
             ],
             'g-recaptcha-response' => ['required', new ReCaptcha]
         ]);
