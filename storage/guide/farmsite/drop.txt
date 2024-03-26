@@ -1,5 +1,6 @@
 Crone:
     - Lower & Upper = 2k
-    - Mock Duck = 2k-10k 
+    - Mock Duck = 2k-10k
+    - Ashkeena = 15k-25k
 Power Badge
 IP Ticket 500
