@@ -17,10 +17,6 @@ class LoginController extends Controller
 
     public function authenticate(Request $request)
     {
-        $validatedData = $request->validate([
-            'g-recaptcha-response' => ['required', new ReCaptcha]
-        ]);
-
         $credentials = $request->validate([
             'login_id' => 'required',
             'password' => 'required',
@@ -30,7 +26,7 @@ class LoginController extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
 
-            return redirect()->intended('/dashboard')->with('success', 'Login Successful!');
+            return redirect()->intended(route('dashboard'))->with('success', 'Login Successful!');
         }
 
         return back()->with('loginError', 'Login attempt failed. Make sure you enter correct login information.');

@@ -1,92 +1,105 @@
 @extends('layouts.login-register')
 
 @section('content')
-    <div class="container-scroller">
-        <div class="container-fluid page-body-wrapper full-page-wrapper">
-            <div class="content-wrapper d-flex align-items-center auth px-0">
-                <div class="row w-100 mx-0">
-                    <div class="col-lg-4 mx-auto">
-                        @if (session()->has('success'))
-                            <div class="alert alert-success alert-dismissible fade show col-md-12" role="alert">
-                                {{ session('success') }}
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                        @endif
-                        <div class="auth-form-light text-left py-5 px-4 px-sm-5">
-                            <div class="brand-logo">
-                                <a href="/index"><img src="../../images/logo.svg" alt="logo"></a>
-                            </div>
-                            <h4>New here?</h4>
-                            <h6 class="font-weight-light">Signing up is easy. It only takes a few steps</h6>
-                            <form class="pt-3" action="/register" method="POST">
-                                @csrf
-                                <div class="form-group">
-                                    <input type="text"
-                                        class="form-control form-control-lg @error('login_id')is-invalid @enderror"
-                                        id="login_id" name="login_id" placeholder="Username" autofocus autocomplete="off"
-                                        required value="{{ old('login_id') }}">
-                                    @error('login_id')
-                                        <div class="invalid-feedback">
-                                            {{ $message }}
-                                        </div>
-                                    @enderror
-                                </div>
-                                <div class="form-group">
-                                    <input type="email"
-                                        class="form-control form-control-lg @error('email')is-invalid @enderror"
-                                        id="email" placeholder="Email" name="email" required
-                                        value="{{ @old('email') }}">
-                                    @error('email')
-                                        <div class="invalid-feedback">
-                                            {{ $message }}
-                                        </div>
-                                    @enderror
-                                </div>
-                                <div class="form-group">
-                                    <input type="password"
-                                        class="form-control form-control-lg @error('password')is-invalid @enderror"
-                                        id="password" placeholder="Password" name="password" required
-                                        value="{{ @old('password') }}">
-                                    @error('password')
-                                        <div class="invalid-feedback">
-                                            {{ $message }}
-                                        </div>
-                                    @enderror
-                                </div>
-                                <div class="form-group">
-                                    <input type="password"
-                                        class="form-control form-control-lg @error('password')is-invalid @enderror"
-                                        id="passwordconfirmation" placeholder="Re-enter Password"
-                                        name="password_confirmation">
-                                    @error('password')
-                                        <div class="invalid-feedback">
-                                            {{ $message }}
-                                        </div>
-                                    @enderror
-                                </div>
-                                <div class="form-group">
-                                    <div class="g-recaptcha" data-sitekey="{{ env('GOOGLE_RECAPTCHA_KEY') }}"
-                                        data-size="normal"></div>
-                                    @if ($errors->has('g-recaptcha-response'))
-                                        <span class="text-danger">{{ $errors->first('g-recaptcha-response') }}</span>
-                                    @endif
-                                </div>
-                                <div class="mt-3">
-                                    <button class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn"
-                                        type="submit">SIGN UP</button>
-                                </div>
-                                <div class="text-center mt-4 font-weight-light">
-                                    Already have an account? <a href="/login" class="text-primary">Login</a>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+
+    <body class="hold-transition register-page">
+
+        <div class="register-box">
+            @if (session()->has('success'))
+                <div class="alert alert-success alert-dismissible fade show col-md-12" role="alert">
+                    {{ session('success') }}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-            </div>
-            <!-- content-wrapper ends -->
+            @endif
+            <div class="card card-outline card-primary">
+                <div class="card-header text-center">
+                    <a href="{{ route('home') }}" class="h1"><b>{{ str_replace('_', ' ', config('app.name')) }}</b></a>
+                </div>
+                <div class="card-body">
+                    <p class="login-box-msg">Register a new membership</p>
+
+                    <form action="{{ route('register-post') }}" method="post">
+                        @csrf
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control @error('login_id')is-invalid @enderror"
+                                name="login_id" placeholder="Username" required>
+                            <div class="input-group-append">
+                                <div class="input-group-text">
+                                    <span class="fas fa-user"></span>
+                                </div>
+                            </div>
+                            @error('login_id')
+                                <div class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                            @enderror
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control @error('email')is-invalid @enderror" name="email"
+                                placeholder="Email" required>
+                            <div class="input-group-append">
+                                <div class="input-group-text">
+                                    <span class="fas fa-envelope"></span>
+                                </div>
+                            </div>
+                            @error('email')
+                                <div class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                            @enderror
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="password" class="form-control @error('password')is-invalid @enderror"
+                                name="password" placeholder="Password" required>
+                            <div class="input-group-append">
+                                <div class="input-group-text">
+                                    <span class="fas fa-lock"></span>
+                                </div>
+                            </div>
+                            @error('password')
+                                <div class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                            @enderror
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="password" class="form-control @error('password')is-invalid @enderror"
+                                name="password_confirmation" placeholder="Retype password" required>
+                            <div class="input-group-append">
+                                <div class="input-group-text">
+                                    <span class="fas fa-lock"></span>
+                                </div>
+                            </div>
+                            @error('password')
+                                <div class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                            @enderror
+                        </div>
+                        <div class="row mb-3">
+                            <!-- /.col -->
+                            <div class="col-4">
+                                <button type="submit" class="btn btn-primary btn-block">Register</button>
+                            </div>
+                            <!-- /.col -->
+                        </div>
+                    </form>
+
+
+                    <a href="{{ route('login') }}" class="text-center">I already have a Account</a>
+                </div>
+                <!-- /.form-box -->
+            </div><!-- /.card -->
         </div>
-        <!-- page-body-wrapper ends -->
-    </div>
+        <!-- /.register-box -->
+
+        <!-- jQuery -->
+        <script src="../../plugins/jquery/jquery.min.js"></script>
+        <!-- Bootstrap 4 -->
+        <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../../dist/js/adminlte.min.js"></script>
+    </body>
 @endsection

@@ -1,14 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Auth\AccountController;
-use App\Http\Controllers\Auth\AdminController;
 use App\Http\Controllers\Auth\DashboardController;
-use App\Http\Controllers\Auth\DisconnectController;
-use App\Http\Controllers\Auth\FreemallController;
 use App\Http\Controllers\Auth\ItemmallController;
-use App\Http\Controllers\Auth\PointsController;
-use App\Http\Controllers\Auth\TransactionsController;
 use App\Http\Controllers\Guest\HomeController;
 use App\Http\Controllers\Guest\LoginController;
 use App\Http\Controllers\Guest\RegisterController;
@@ -25,52 +19,33 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/topup', function () {
-    return view('topup.index');
-});
+Route::get('/donate', function () {
+    return view('donate.index');
+})->name('donate');
 
 Route::group(['middleware' => 'guest'], function () {
     Route::get('/', function () {
         return redirect('/index');
     });
 
-    Route::get('/index', [HomeController::class, 'index']);
+    Route::get('/index', [HomeController::class, 'index'])->name('home');
 
     Route::get('/login', [LoginController::class, 'index'])->name('login');
-    Route::post('/login', [LoginController::class, 'authenticate']);
+    Route::post('/login', [LoginController::class, 'authenticate'])->name('login-post');
     Route::get('/logout', function () {
         return redirect()->route('login');
     });
 
     Route::get('/register', [RegisterController::class, 'index'])->name('register');
-    Route::post('/register', [RegisterController::class, 'store']);
+    Route::post('/register', [RegisterController::class, 'store'])->name('register-post');
 });
 
 Route::group(['middleware' => 'auth'], function () {
-    Route::post('/logout', [LoginController::class, 'logout']);
+    Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
-    Route::get('/fix5101', [DisconnectController::class, 'fixdc']);
 
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
     Route::get('/itemmall', [ItemmallController::class, 'index'])->name('itemmall');
-    Route::post('/itemmall', [ItemmallController::class, 'store']);
-
-    Route::get('/freemall', [FreemallController::class, 'index'])->name('freemall');
-    Route::post('/freemall', [FreemallController::class, 'store']);
-
-    Route::get('/transaction', [TransactionsController::class, 'show'])->name('transaction');
-
-    Route::get('/changepassword', [AccountController::class, 'changePasswordView'])->name('changepassword');
-    Route::post('/changepassword', [AccountController::class, 'changePasswordUpdate']);
-
-    Route::get('/changenickname', [AccountController::class, 'changeNicknameView'])->name('changenickname');
-    Route::post('/changenickname', [AccountController::class, 'changeNicknameUpdate']);
-
-    Route::get('/changegender', [AccountController::class, 'changeGenderView'])->name('changegender');
-    Route::post('/changegender', [AccountController::class, 'changeGenderUpdate']);
-
-    Route::get('/dashboard/admin', [AdminController::class, 'index']);
-    Route::post('/dashboard/admin', [AdminController::class, 'isMaintenance']);
-    Route::resource('/dashboard/admin/rps', PointsController::class)->except(['show', 'destroy', 'edit', 'update']);
+    Route::post('/itemmall', [ItemmallController::class, 'store'])->name('itemmall-post');
 });

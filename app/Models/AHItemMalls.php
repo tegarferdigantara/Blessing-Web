@@ -14,4 +14,6 @@ class AHItemMalls extends Model
     protected $connection = 'RohanMall';
 
     protected $table = "AHItemMalls";
+
+    public $timestamps = false;
 }
