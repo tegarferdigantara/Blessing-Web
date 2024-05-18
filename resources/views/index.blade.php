@@ -128,158 +128,160 @@
                                 <tbody>
                                     @if ($TOP15)
                                         @foreach ($TOP15 as $top)
-                                            <tr>
-                                                <td class="font-weight-bold">
-                                                    @if ($top->class == 197133)
-                                                        <img src="../images/faces/GRC/felf.gif" alt="image" />
-                                                    @elseif ($top->class == 197134)
-                                                        <img src="../images/faces/GRC/felf.gif" alt="image" />
-                                                    @elseif ($top->class == 197135)
-                                                        <img src="../images/faces/GRC/felf.gif" alt="image" />
-                                                    @elseif ($top->class == 196993)
-                                                        <img src="../images/faces/GRC/mhuman.gif" alt="image" />
-                                                    @elseif ($top->class == 196994)
-                                                        <img src="../images/faces/GRC/mhuman.gif" alt="image" />
-                                                    @elseif ($top->class == 196995)
-                                                        <img src="../images/faces/GRC/mhuman.gif" alt="image" />
-                                                    @elseif ($top->class == 196869)
-                                                        <img src="../images/faces/GRC/fhuman.gif" alt="image" />
-                                                    @elseif ($top->class == 196870)
-                                                        <img src="../images/faces/GRC/fhuman.gif" alt="image" />
-                                                    @elseif ($top->class == 196871)
-                                                        <img src="../images/faces/GRC/fhuman.gif" alt="image" />
-                                                    @elseif ($top->class == 197257)
-                                                        <img src="../images/faces/GRC/melf.gif" alt="image" />
-                                                    @elseif ($top->class == 197258)
-                                                        <img src="../images/faces/GRC/melf.gif" alt="image" />
-                                                    @elseif ($top->class == 197259)
-                                                        <img src="../images/faces/GRC/melf.gif" alt="image" />
-                                                    @elseif ($top->class == 198809)
-                                                        <img src="../images/faces/GRC/mdhan.gif" alt="image" />
-                                                    @elseif ($top->class == 198810)
-                                                        <img src="../images/faces/GRC/mdhan.gif" alt="image" />
-                                                    @elseif ($top->class == 198811)
-                                                        <img src="../images/faces/GRC/mdhan.gif" alt="image" />
-                                                    @elseif ($top->class == 197777)
-                                                        <img src="../images/faces/GRC/mhalf.gif" alt="image" />
-                                                    @elseif ($top->class == 197778)
-                                                        <img src="../images/faces/GRC/mhalf.gif" alt="image" />
-                                                    @elseif ($top->class == 197779)
-                                                        <img src="../images/faces/GRC/mhalf.gif" alt="image" />
-                                                    @elseif ($top->class == 198685)
-                                                        <img src="../images/faces/GRC/fdhan.gif" alt="image" />
-                                                    @elseif ($top->class == 198686)
-                                                        <img src="../images/faces/GRC/fdhan.gif" alt="image" />
-                                                    @elseif ($top->class == 198687)
-                                                        <img src="../images/faces/GRC/fdhan.gif" alt="image" />
-                                                    @elseif ($top->class == 197653)
-                                                        <img src="../images/faces/GRC/fhalf.gif" alt="image" />
-                                                    @elseif ($top->class == 197654)
-                                                        <img src="../images/faces/GRC/fhalf.gif" alt="image" />
-                                                    @elseif ($top->class == 197655)
-                                                        <img src="../images/faces/GRC/fhalf.gif" alt="image" />
-                                                    @elseif ($top->class == 229561)
-                                                        <img src="../images/faces/GRC/mdekan.gif" alt="image" />
-                                                    @elseif ($top->class == 229562)
-                                                        <img src="../images/faces/GRC/mdekan.gif" alt="image" />
-                                                    @elseif ($top->class == 229563)
-                                                        <img src="../images/faces/GRC/mdekan.gif" alt="image" />
-                                                    @elseif ($top->class == 229437)
-                                                        <img src="../images/faces/GRC/fdekan.gif" alt="image" />
-                                                    @elseif ($top->class == 229438)
-                                                        <img src="../images/faces/GRC/fdekan.gif" alt="image" />
-                                                    @elseif ($top->class == 229439)
-                                                        <img src="../images/faces/GRC/fdekan.gif" alt="image" />
-                                                    @elseif ($top->class == 204969)
-                                                        <img src="../images/faces/GRC/mwizzard.gif" alt="image" />
-                                                    @elseif ($top->class == 204970)
-                                                        <img src="../images/faces/GRC/mwizzard.gif" alt="image" />
-                                                    @elseif ($top->class == 204971)
-                                                        <img src="../images/faces/GRC/mwizzard.gif" alt="image" />
-                                                    @elseif ($top->class == 204845)
-                                                        <img src="../images/faces/GRC/fwizzard.gif" alt="image" />
-                                                    @elseif ($top->class == 204846)
-                                                        <img src="../images/faces/GRC/fwizzard.gif" alt="image" />
-                                                    @elseif ($top->class == 204847)
-                                                        <img src="../images/faces/GRC/fwizzard.gif" alt="image" />
-                                                    @elseif ($top->class == 200865)
-                                                        <img src="../images/faces/GRC/mgiant.gif" alt="image" />
-                                                    @elseif ($top->class == 200866)
-                                                        <img src="../images/faces/GRC/mgiant.gif" alt="image" />
-                                                    @elseif ($top->class == 200867)
-                                                        <img src="../images/faces/GRC/mgiant.gif" alt="image" />
-                                                    @elseif ($top->class == 200741)
-                                                        <img src="../images/faces/GRC/fgiant.gif" alt="image" />
-                                                    @elseif ($top->class == 200742)
-                                                        <img src="../images/faces/GRC/fgiant.gif" alt="image" />
-                                                    @elseif ($top->class == 200743)
-                                                        <img src="../images/faces/GRC/fgiant.gif" alt="image" />
-                                                    @elseif ($top->class == 213045)
-                                                        <img src="../images/faces/GRC/rumir.png" alt="image" />
-                                                    @elseif ($top->class == 213046)
-                                                        <img src="../images/faces/GRC/rumir.png" alt="image" />
-                                                    @elseif ($top->class == 213047)
-                                                        <img src="../images/faces/GRC/rumir.png" alt="image" />
-                                                    @endif
-                                                    <span class="pl-2">{{ $top->name }}</span>
-                                                </td>
-                                                <td class="font-weight-bold"> {{ $top->lvl }} </td>
-                                                <td class="font-weight-bold">
-                                                    @if (in_array($top->class, [196869, 196993]))
-                                                        Human
-                                                    @elseif (in_array($top->class, [196870, 196994]))
-                                                        Guardian
-                                                    @elseif (in_array($top->class, [196871, 196995]))
-                                                        Defender
-                                                    @elseif (in_array($top->class, [197133, 197257]))
-                                                        Elf
-                                                    @elseif (in_array($top->class, [197134, 197258]))
-                                                        Priest
-                                                    @elseif (in_array($top->class, [197135, 197259]))
-                                                        Templar
-                                                    @elseif (in_array($top->class, [197653, 197777]))
-                                                        Archer
-                                                    @elseif (in_array($top->class, [197654, 197778]))
-                                                        Ranger
-                                                    @elseif (in_array($top->class, [197655, 197779]))
-                                                        Scout
-                                                    @elseif (in_array($top->class, [198685, 198809]))
-                                                        Assassin
-                                                    @elseif (in_array($top->class, [198686, 198810]))
-                                                        Avenger
-                                                    @elseif (in_array($top->class, [198687, 198811]))
-                                                        Predator
-                                                    @elseif (in_array($top->class, [200741, 200865]))
-                                                        Warrior
-                                                    @elseif (in_array($top->class, [200742, 200866]))
-                                                        Berseker
-                                                    @elseif (in_array($top->class, [200743, 200867]))
-                                                        Savage
-                                                    @elseif (in_array($top->class, [204845, 204969]))
-                                                        Mage
-                                                    @elseif (in_array($top->class, [204846, 204970]))
-                                                        Warlock
-                                                    @elseif (in_array($top->class, [204847, 204971]))
-                                                        Wizard
-                                                    @elseif (in_array($top->class, [229437, 229561]))
-                                                        Dragon Fighter
-                                                    @elseif (in_array($top->class, [229438, 229562]))
-                                                        Dragon Knight
-                                                    @elseif (in_array($top->class, [229439, 229563]))
-                                                        Dragon Sage
-                                                    @endif
+                                            @if (substr($top->name, 0, 1) !== '!')
+                                                <tr>
+                                                    <td class="font-weight-bold">
+                                                        @if ($top->class == 197133)
+                                                            <img src="../images/faces/GRC/felf.gif" alt="image" />
+                                                        @elseif ($top->class == 197134)
+                                                            <img src="../images/faces/GRC/felf.gif" alt="image" />
+                                                        @elseif ($top->class == 197135)
+                                                            <img src="../images/faces/GRC/felf.gif" alt="image" />
+                                                        @elseif ($top->class == 196993)
+                                                            <img src="../images/faces/GRC/mhuman.gif" alt="image" />
+                                                        @elseif ($top->class == 196994)
+                                                            <img src="../images/faces/GRC/mhuman.gif" alt="image" />
+                                                        @elseif ($top->class == 196995)
+                                                            <img src="../images/faces/GRC/mhuman.gif" alt="image" />
+                                                        @elseif ($top->class == 196869)
+                                                            <img src="../images/faces/GRC/fhuman.gif" alt="image" />
+                                                        @elseif ($top->class == 196870)
+                                                            <img src="../images/faces/GRC/fhuman.gif" alt="image" />
+                                                        @elseif ($top->class == 196871)
+                                                            <img src="../images/faces/GRC/fhuman.gif" alt="image" />
+                                                        @elseif ($top->class == 197257)
+                                                            <img src="../images/faces/GRC/melf.gif" alt="image" />
+                                                        @elseif ($top->class == 197258)
+                                                            <img src="../images/faces/GRC/melf.gif" alt="image" />
+                                                        @elseif ($top->class == 197259)
+                                                            <img src="../images/faces/GRC/melf.gif" alt="image" />
+                                                        @elseif ($top->class == 198809)
+                                                            <img src="../images/faces/GRC/mdhan.gif" alt="image" />
+                                                        @elseif ($top->class == 198810)
+                                                            <img src="../images/faces/GRC/mdhan.gif" alt="image" />
+                                                        @elseif ($top->class == 198811)
+                                                            <img src="../images/faces/GRC/mdhan.gif" alt="image" />
+                                                        @elseif ($top->class == 197777)
+                                                            <img src="../images/faces/GRC/mhalf.gif" alt="image" />
+                                                        @elseif ($top->class == 197778)
+                                                            <img src="../images/faces/GRC/mhalf.gif" alt="image" />
+                                                        @elseif ($top->class == 197779)
+                                                            <img src="../images/faces/GRC/mhalf.gif" alt="image" />
+                                                        @elseif ($top->class == 198685)
+                                                            <img src="../images/faces/GRC/fdhan.gif" alt="image" />
+                                                        @elseif ($top->class == 198686)
+                                                            <img src="../images/faces/GRC/fdhan.gif" alt="image" />
+                                                        @elseif ($top->class == 198687)
+                                                            <img src="../images/faces/GRC/fdhan.gif" alt="image" />
+                                                        @elseif ($top->class == 197653)
+                                                            <img src="../images/faces/GRC/fhalf.gif" alt="image" />
+                                                        @elseif ($top->class == 197654)
+                                                            <img src="../images/faces/GRC/fhalf.gif" alt="image" />
+                                                        @elseif ($top->class == 197655)
+                                                            <img src="../images/faces/GRC/fhalf.gif" alt="image" />
+                                                        @elseif ($top->class == 229561)
+                                                            <img src="../images/faces/GRC/mdekan.gif" alt="image" />
+                                                        @elseif ($top->class == 229562)
+                                                            <img src="../images/faces/GRC/mdekan.gif" alt="image" />
+                                                        @elseif ($top->class == 229563)
+                                                            <img src="../images/faces/GRC/mdekan.gif" alt="image" />
+                                                        @elseif ($top->class == 229437)
+                                                            <img src="../images/faces/GRC/fdekan.gif" alt="image" />
+                                                        @elseif ($top->class == 229438)
+                                                            <img src="../images/faces/GRC/fdekan.gif" alt="image" />
+                                                        @elseif ($top->class == 229439)
+                                                            <img src="../images/faces/GRC/fdekan.gif" alt="image" />
+                                                        @elseif ($top->class == 204969)
+                                                            <img src="../images/faces/GRC/mwizzard.gif" alt="image" />
+                                                        @elseif ($top->class == 204970)
+                                                            <img src="../images/faces/GRC/mwizzard.gif" alt="image" />
+                                                        @elseif ($top->class == 204971)
+                                                            <img src="../images/faces/GRC/mwizzard.gif" alt="image" />
+                                                        @elseif ($top->class == 204845)
+                                                            <img src="../images/faces/GRC/fwizzard.gif" alt="image" />
+                                                        @elseif ($top->class == 204846)
+                                                            <img src="../images/faces/GRC/fwizzard.gif" alt="image" />
+                                                        @elseif ($top->class == 204847)
+                                                            <img src="../images/faces/GRC/fwizzard.gif" alt="image" />
+                                                        @elseif ($top->class == 200865)
+                                                            <img src="../images/faces/GRC/mgiant.gif" alt="image" />
+                                                        @elseif ($top->class == 200866)
+                                                            <img src="../images/faces/GRC/mgiant.gif" alt="image" />
+                                                        @elseif ($top->class == 200867)
+                                                            <img src="../images/faces/GRC/mgiant.gif" alt="image" />
+                                                        @elseif ($top->class == 200741)
+                                                            <img src="../images/faces/GRC/fgiant.gif" alt="image" />
+                                                        @elseif ($top->class == 200742)
+                                                            <img src="../images/faces/GRC/fgiant.gif" alt="image" />
+                                                        @elseif ($top->class == 200743)
+                                                            <img src="../images/faces/GRC/fgiant.gif" alt="image" />
+                                                        @elseif ($top->class == 213045)
+                                                            <img src="../images/faces/GRC/rumir.png" alt="image" />
+                                                        @elseif ($top->class == 213046)
+                                                            <img src="../images/faces/GRC/rumir.png" alt="image" />
+                                                        @elseif ($top->class == 213047)
+                                                            <img src="../images/faces/GRC/rumir.png" alt="image" />
+                                                        @endif
+                                                        <span class="pl-2">{{ $top->name }}</span>
+                                                    </td>
+                                                    <td class="font-weight-bold"> {{ $top->lvl }} </td>
+                                                    <td class="font-weight-bold">
+                                                        @if (in_array($top->class, [196869, 196993]))
+                                                            Human
+                                                        @elseif (in_array($top->class, [196870, 196994]))
+                                                            Guardian
+                                                        @elseif (in_array($top->class, [196871, 196995]))
+                                                            Defender
+                                                        @elseif (in_array($top->class, [197133, 197257]))
+                                                            Elf
+                                                        @elseif (in_array($top->class, [197134, 197258]))
+                                                            Priest
+                                                        @elseif (in_array($top->class, [197135, 197259]))
+                                                            Templar
+                                                        @elseif (in_array($top->class, [197653, 197777]))
+                                                            Archer
+                                                        @elseif (in_array($top->class, [197654, 197778]))
+                                                            Ranger
+                                                        @elseif (in_array($top->class, [197655, 197779]))
+                                                            Scout
+                                                        @elseif (in_array($top->class, [198685, 198809]))
+                                                            Assassin
+                                                        @elseif (in_array($top->class, [198686, 198810]))
+                                                            Avenger
+                                                        @elseif (in_array($top->class, [198687, 198811]))
+                                                            Predator
+                                                        @elseif (in_array($top->class, [200741, 200865]))
+                                                            Warrior
+                                                        @elseif (in_array($top->class, [200742, 200866]))
+                                                            Berseker
+                                                        @elseif (in_array($top->class, [200743, 200867]))
+                                                            Savage
+                                                        @elseif (in_array($top->class, [204845, 204969]))
+                                                            Mage
+                                                        @elseif (in_array($top->class, [204846, 204970]))
+                                                            Warlock
+                                                        @elseif (in_array($top->class, [204847, 204971]))
+                                                            Wizard
+                                                        @elseif (in_array($top->class, [229437, 229561]))
+                                                            Dragon Fighter
+                                                        @elseif (in_array($top->class, [229438, 229562]))
+                                                            Dragon Knight
+                                                        @elseif (in_array($top->class, [229439, 229563]))
+                                                            Dragon Sage
+                                                        @endif
 
-                                                </td>
-                                                <td class="font-weight-bold"> {{ $top->kill_count }} </td>
-                                                <td class="font-weight-medium">
-                                                    @if ($top->sts == 1)
-                                                        <div class="badge badge-success">Online</div>
-                                                    @else
-                                                        <div class="badge badge-danger">Offline</div>
-                                                    @endif
+                                                    </td>
+                                                    <td class="font-weight-bold"> {{ $top->kill_count }} </td>
+                                                    <td class="font-weight-medium">
+                                                        @if ($top->sts == 1)
+                                                            <div class="badge badge-success">Online</div>
+                                                        @else
+                                                            <div class="badge badge-danger">Offline</div>
+                                                        @endif
 
-                                                </td>
-                                            </tr>
+                                                    </td>
+                                                </tr>
+                                            @endif
                                         @endforeach
                                     @else
                                         <h1>Records not found</h1>
