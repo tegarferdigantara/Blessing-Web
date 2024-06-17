@@ -75,6 +75,9 @@
                 </a>
             </li>
             @include('partials.download.index')
+            @can('isAdmin', auth()->user())
+                @include('partials.send-item.index')
+            @endcan
         </ul>
     </nav>
     <!-- /.sidebar-menu -->

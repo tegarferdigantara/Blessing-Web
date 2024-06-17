@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\DashboardController;
 use App\Http\Controllers\Auth\ItemmallController;
+use App\Http\Controllers\Auth\TEventItemController;
 use App\Http\Controllers\Guest\HomeController;
 use App\Http\Controllers\Guest\LoginController;
 use App\Http\Controllers\Guest\RegisterController;
@@ -48,4 +49,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/itemmall', [ItemmallController::class, 'index'])->name('itemmall');
     Route::post('/itemmall', [ItemmallController::class, 'store'])->name('itemmall-post');
+
+    Route::get('/send-item', [TEventItemController::class, 'index'])->name('send-item');
+    Route::post('/send-item', [TEventItemController::class, 'store'])->name('send-item-post');
 });
