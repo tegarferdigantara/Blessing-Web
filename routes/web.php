@@ -50,6 +50,18 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/itemmall', [ItemmallController::class, 'index'])->name('itemmall');
     Route::post('/itemmall', [ItemmallController::class, 'store'])->name('itemmall-post');
 
-    Route::get('/send-item', [TEventItemController::class, 'index'])->name('send-item');
-    Route::post('/send-item', [TEventItemController::class, 'store'])->name('send-item-post');
+    Route::get('/send-item-online', [TEventItemController::class, 'onlineIndex'])->name('send-item-online');
+    Route::post('/send-item-online', [TEventItemController::class, 'onlineStore'])->name('send-item-online-post');
+
+    Route::get('/send-item-on-off', [TEventItemController::class, 'onlineOfflineIndex'])->name('send-item-on-off');
+    Route::post('/send-item-on-off', [TEventItemController::class, 'onlineOfflineStore'])->name('send-item-on-off-post');
+
+    Route::get('/send-item-offline', [TEventItemController::class, 'offlineIndex'])->name('send-item-offline');
+    Route::post('/send-item-offline', [TEventItemController::class, 'offlineStore'])->name('send-item-offline-post');
+
+    Route::get('/send-item-by-id', [TEventItemController::class, 'byIdIndex'])->name('send-item-by-id');
+    Route::post('/send-item-by-id', [TEventItemController::class, 'byIdStore'])->name('send-item-by-id-post');
+
+    Route::get('/send-rps', [TEventItemController::class, 'rpsIndex'])->name('send-rps');
+    Route::post('/send-rps', [TEventItemController::class, 'rpsStore'])->name('send-rps-post');
 });
